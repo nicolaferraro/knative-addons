@@ -1,0 +1,5 @@
+packageName: knative-camel-addon
+channels:
+- name: alpha
+  currentCSV: knative-camel-addon-operator.v0.6.0
+defaultChannel: alpha

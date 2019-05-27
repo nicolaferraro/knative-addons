@@ -1,0 +1,4 @@
+packageName: camel-k-2
+channels:
+- name: alpha
+  currentCSV: camel-k-2-operator.v0.3.3
