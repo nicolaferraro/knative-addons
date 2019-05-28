@@ -43,12 +43,18 @@ spec:
     For documentation on using Knative Camel Sources, see the
     [Camel Source section](https://knative.dev/docs/eventing/samples/apache-camel-source/) of the
     [Knative documentation site](https://www.knative.dev/docs).
-  keywords: ['apache', 'camel', 'knative', 'camel-k', 'kubernetes', 'serverless', 'microservices']
+  keywords:
+    - serverless
+    - FaaS
+    - microservices
+    - scale to zero
+    - apache camel
+    - camel k
   maintainers:
-  - name: Red Hat
-    email: users@redhat.com
+  - name: Knative Team
+    email: knative@redhat.com
   provider:
-    name: Red Hat
+    name: Knative Community
   labels:
     name: knative-camel-addon
   selector:
@@ -67,8 +73,8 @@ spec:
     - kind: CamelSource
       name: camelsources.sources.eventing.knative.dev
       version: v1alpha1
-      displayName: Camel Generic Source
-      description: Represents a Knative Generic Source based on Apache Camel
+      displayName: Camel Source
+      description: Represents a Knative Source based on Apache Camel
     required:
 #    # Can't add Camel K because of this: https://github.com/operator-framework/operator-lifecycle-manager/issues/873
 #    - kind: Integration
